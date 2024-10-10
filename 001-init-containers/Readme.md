@@ -23,7 +23,7 @@ Init containers will be useful in various scenarios.
 4. **Network Setup:** Establish the network configurations to external services.
 5. **Cache Warm-up:** Preload the frequently accessed data to cache systems like Redis.
 
-![init-containers-001.png](init-containers-001.png)
+![init-containers-001.png](assets/init-containers-001.png)
 
 # Practical Example: Web Server with Dynamic IP Display
 
