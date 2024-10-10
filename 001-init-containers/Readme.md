@@ -121,4 +121,4 @@ kubectl get pods -w
     
     Example: [http://localhost:8080](http://localhost:8080/)
     
-    ![image.png](image.png)
+    ![image.png](assets/image.png)
