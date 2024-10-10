@@ -89,13 +89,13 @@ The other init container “create-index” will get that value from the file an
 
 Finally, our application container “nginx” will read the index file. 
 
-1. Apply the configuration
+2. Apply the configuration
 
 ```yaml
 kubectl apply -f pod-with-init-containers.yaml
 ```
 
-1. Deploy a service to expose the port of the application container.
+3. Deploy a service to expose the port of the application container.
 
 ```yaml
 apiVersion: v1
@@ -111,13 +111,13 @@ spec:
     targetPort: 8080 # Port on the container to forward requests to
 ```
 
-1. Wait for the pod to be ready:
+4. Wait for the pod to be ready:
 
 ```yaml
 kubectl get pods -w
 ```
 
-1. Got to your load balancer or cluster dns to check whether the application is working.
+5. Got to your load balancer or cluster dns to check whether the application is working.
     
     Example: [http://localhost:8080](http://localhost:8080/)
     
