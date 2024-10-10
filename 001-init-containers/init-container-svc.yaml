@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: web-server-service
+spec:
+  type: NodePort # You can change this to ClusterIP or LoadBalancer as needed
+  selector:
+    app: web-server # This should match the pod label
+  ports:
+  - port: 8080 # Port that the service will expose
+    targetPort: 8080 # Port on the container to forward requests to
