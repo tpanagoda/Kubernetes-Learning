@@ -26,6 +26,7 @@ This article will include a step-by-step lab guide to setting up a Kubernetes cl
 4. [Initialize Control Plane](#initialize-control-plane)
 5. [Join Worker Nodes to the Cluster](#join-worker-nodes-to-the-cluster)
 6. [Verify the Cluster](#verify-the-cluster)
+7. [Troubleshooting](#troubleshooting)
 
 ## Overview
 
