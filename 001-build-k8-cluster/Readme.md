@@ -1,5 +1,3 @@
-# Building a Kubernetes Cluster
-
 # Building a Kubernetes Cluster with Kubeadm on Ubuntu Servers
 
 This article will include a step-by-step lab guide to setting up a Kubernetes cluster using `kubeadm` on three Ubuntu servers. Here we will set 1 control node and 2 worker nodes (You can set 1 worker node as well). Following this guide, you can set up your Kubernetes cluster from scratch. I have created this article by referring to the official documentation and some other references including ChatGPT, I have tried this in a test environment and indicated the steps I have tried. If you are doing this in a production environment there will be more factors to consider than indicated below.
