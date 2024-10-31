@@ -4,6 +4,6 @@ Welcome to my Kubernetes Learning repository! This repository contains various r
 
 ## Table of Contents
 
+- [Building a Kubernetes Cluster](https://github.com/tpanagoda/Kubernetes-Learning/tree/main/001-build-k8-cluster)
 - [Kubernetes Init Containers](https://github.com/tpanagoda/Kubernetes-Learning/tree/main/001-init-containers)
 - [Kubernetes Exploring Volumes](https://github.com/tpanagoda/Kubernetes-Learning/tree/main/002-volumes)
-- [Building a Kubernetes Cluster](https://github.com/tpanagoda/Kubernetes-Learning/tree/main/001-build-k8-cluster)

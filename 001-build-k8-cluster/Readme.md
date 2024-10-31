@@ -20,12 +20,12 @@ This article will include a step-by-step lab guide to setting up a Kubernetes cl
 
 ## Table of Contents
 
-1. [Overview] (#overview)
-2. [Setting up the Hosts] (#setting-up-the-hosts)
-3. [Install Docker and Kubernetes Dependencies] (#install-docker-and-kubernetes-dependencies)
-4. [Initialize Control Plane] (#initialize-control-plane)
-5. [Join Worker Nodes to the Cluster] (#join-worker-nodes-to-the-cluster)
-6. [Verify the Cluster] (#verify-the-cluster)
+1. [Overview](#overview)
+2. [Setting up the Hosts](#setting-up-the-hosts)
+3. [Install Docker and Kubernetes Dependencies](#install-docker-and-kubernetes-dependencies)
+4. [Initialize Control Plane](#initialize-control-plane)
+5. [Join Worker Nodes to the Cluster](#join-worker-nodes-to-the-cluster)
+6. [Verify the Cluster](#verify-the-cluster)
 
 ## Overview
 
