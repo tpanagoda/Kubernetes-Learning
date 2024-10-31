@@ -3,7 +3,7 @@
 <aside>
 💡
 
-> Files in this article is available in the Github repository ‣ refer the folder `002-volumes` to get the required files.
+> Files in this article is available in the Github repository [Kubernetes-Learning.git](https://github.com/tpanagoda/Kubernetes-Learning) refer the folder `002-volumes` to get the required files.
 > 
 </aside>
 
