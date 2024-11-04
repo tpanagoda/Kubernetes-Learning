@@ -1,0 +1,43 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: web-server-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: web-server
+  template:
+    metadata:
+      labels:
+        app: web-server
+    spec:
+      volumes:
+      - name: web-content
+        emptyDir: {}
+      initContainers:
+      - name: get-ip
+        image: busybox
+        command: ['sh', '-c', 'echo $POD_IP > /web-content/ip.txt']
+        env:
+        - name: POD_IP
+          valueFrom:
+            fieldRef:
+              fieldPath: status.podIP
+        volumeMounts:
+        - name: web-content
+          mountPath: /web-content
+      - name: create-index
+        image: busybox
+        command: ['sh', '-c', 'echo "<h1>Pod IP: $(cat /web-content/ip.txt)</h1>" > /web-content/index.html']
+        volumeMounts:
+        - name: web-content
+          mountPath: /web-content
+      containers:
+      - name: nginx
+        image: nginxinc/nginx-unprivileged:stable-alpine
+        ports:
+        - containerPort: 8080
+        volumeMounts:
+        - name: web-content
+          mountPath: /usr/share/nginx/html

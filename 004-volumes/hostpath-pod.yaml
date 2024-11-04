@@ -1,0 +1,18 @@
+## File hostpath-pod.yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: hostpath-volume-pod
+spec:
+  containers:
+  - name: my-container
+    image: busybox
+    command: ["/bin/sh", "-c", "cat /data/hostfile.txt && sleep 3600"]
+    volumeMounts:
+    - name: host-volume
+      mountPath: /data
+  volumes:
+  - name: host-volume
+    hostPath:
+      path: /tmp/hostpath
+      type: Directory
