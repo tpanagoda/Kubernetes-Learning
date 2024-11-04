@@ -7,7 +7,7 @@ Software development in today's world ensuring consistency and efficiency across
 
 # Table of Contents
 
-1. [What is a Container Image?](#what-is-a-container-image?) 
+1. [What is a Container Image?](#what-is-a-container-image) 
 2. [The Role of Docker and Dockerfile](#the-role-of-docker-and-dockerfile)
 3. [Docker Installation](#docker-installation)
 4. [Creating your First Docker Image](#creating-your-first-docker-image)
